@@ -1,79 +1,54 @@
-/* 🔮 Animación de aparición para la sección "about" */
-.about {
-  animation: fadeIn 2s ease-in;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* 🧠 Estilo para enlaces dentro de .about (por si añades CV o redes) */
-.about a {
-  color: #00ffcc;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.about a:hover {
-  color: #25dd01;
-  text-shadow: 0 0 5px #25dd01;
-}
-
-/* 📱 Responsive para pantallas pequeñas */
-@media screen and (max-width: 768px) {
-  .about {
-    width: 90%;
-    padding: 20px;
-    font-size: 0.95em;
-  }
-
-  h1 {
-    font-size: 2em;
-  }
-
-  .content {
-    padding-top: 60px;
-  }
-}
-
-/* 🖱️ Scroll personalizado (solo en navegadores compatibles) */
-body::-webkit-scrollbar {
-  width: 8px;
-}
-
-body::-webkit-scrollbar-track {
-  background: #1a1a1a;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #00ffcc;
-  border-radius: 4px;
-}
-
-/* 💾 Animación de texto tipo máquina de escribir (opcional para frases clave) */
-.typewriter {
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
   overflow: hidden;
-  border-right: .15em solid #25dd01;
-  white-space: nowrap;
-  margin: 20px auto;
-  letter-spacing: .15em;
-  animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+  font-family: 'Courier New', monospace;
 }
 
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+#matrixCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #000000, #2e2e2e);
+  z-index: 0;
 }
 
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #25dd01 }
+.content {
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 100px;
+}
+
+h1 {
+  font-size: 3em;
+  text-shadow: 0 0 10px #25dd01;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.about {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 2px solid #00ffcc;
+  margin: 40px auto;
+  padding: 30px;
+  width: 80%;
+  border-radius: 10px;
+  color: #e0e0e0;
+  font-size: 1em;
+  line-height: 1.6;
+  text-align: left;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+.about h2 {
+  color: #00ffcc;
+  text-shadow: 0 0 5px #00ffcc;
+  margin-bottom: 20px;
 }
