@@ -234,3 +234,20 @@ p {
   filter: drop-shadow(0 0 4px #39ff14);
 }
 
+.avatar {
+  display: block;
+  margin: 0 auto 24px auto;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%; /* recorte circular */
+  border: 3px solid var(--matrix-green); /* borde verde */
+  box-shadow: 0 0 24px 0 var(--matrix-green); /* sombra verde */
+  background: #111;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.avatar:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: 0 0 32px var(--matrix-green-light);
+}
