@@ -8,14 +8,16 @@
   --accent: #00ffcc;
   --text-main: #ffffff;
   --text-secondary: #dbdbdb;
+  --main-font: 'Montserrat', 'Segoe UI', Arial, sans-serif;
 }
 
 html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  /* overflow: hidden; */ /* Elimina o comenta esta línea */
-  font-family: 'Courier New', monospace;
+  /* overflow: hidden; */
+  font-family: var(--main-font);
+  font-weight: bold;
   box-sizing: border-box;
   background: var(--matrix-bg);
 }
@@ -66,7 +68,8 @@ p {
   line-height: 1.6;
   text-align: left;
   box-shadow: 0 0 10px var(--matrix-shadow);
-  font-family: 'Courier New', monospace;
+  font-family: var(--main-font);
+  font-weight: bold;
   animation: fadeIn 2s ease-in;
 }
 
@@ -111,7 +114,8 @@ p {
   line-height: 1.6;
   text-align: left;
   box-shadow: 0 0 10px var(--matrix-shadow);
-  font-family: 'Courier New', monospace;
+  font-family: var(--main-font);
+  font-weight: bold;
   animation: fadeIn 2s ease-in;
 }
 
