@@ -58,22 +58,22 @@ p {
   position: relative;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.8);
-  border: 2px solid #25dd01;
+  border: 2px solid #9ddd90;
   margin: 40px auto;
   padding: 30px;
   width: 80%;
   border-radius: 10px;
-  color: #25dd01;
+  color: #dbdbdb;
   font-size: 1em;
   line-height: 1.6;
   text-align: left;
-  box-shadow: 0 0 10px #25dd01;
+  box-shadow: 0 0 10px #46e027;
   font-family: 'Courier New', monospace;
 }
 /* Título de la sección */
 .about h2 {
-  color: #25dd01;
-  text-shadow: 0 0 5px #25dd01;
+  color: #ffffff;
+  text-shadow: 0 0 5px #2eff04;
   margin-bottom: 20px;
 }
 
