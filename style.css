@@ -152,7 +152,7 @@ p {
   font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif; /* Más redondeada */
   font-weight: bold; /* Negrita */
   box-shadow: 0 0 16px #39ff14;
-  background: linear-gradient(90deg, #25dd01 0%, #39ff14 100%);
+  background: linear-gradient(90deg, #26dd0100 0%, #37ff1441 100%);
   display: flex;
   align-items: center;
   gap: 8px;
@@ -168,7 +168,7 @@ p {
 .social-icon i {
   margin-right: 10px;
   font-size: 1.4em;
-  filter: drop-shadow(0 0 4px #39ff14);
+  filter: drop-shadow(0 0 4px #ffffff);
 }
 
 /* Iconos con Font Awesome */
