@@ -1,32 +1,50 @@
-body, html {
+:root {
+  --matrix-green: #25dd01;
+  --matrix-green-light: #2eff04;
+  --matrix-border: #9ddd90;
+  --matrix-shadow: #46e027;
+  --matrix-bg: #000000;
+  --matrix-bg-gradient: #2e2e2e;
+  --accent: #00ffcc;
+  --text-main: #ffffff;
+  --text-secondary: #dbdbdb;
+}
+
+html, body {
   margin: 0;
   padding: 0;
   height: 100%;
   overflow: hidden;
   font-family: 'Courier New', monospace;
+  box-sizing: border-box;
+  background: var(--matrix-bg);
 }
 
 #matrixCanvas {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, #000000, #2e2e2e);
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, var(--matrix-bg), var(--matrix-bg-gradient));
   z-index: 0;
 }
 
 .content {
   position: relative;
   z-index: 1;
-  color: #ffffff;
+  color: var(--text-main);
   text-align: center;
   padding-top: 100px;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 h1 {
   font-size: 3em;
-  text-shadow: 0 0 10px #25dd01;
+  text-shadow: 0 0 10px var(--matrix-green);
+  margin-bottom: 0.5em;
 }
 
 p {
@@ -34,55 +52,44 @@ p {
 }
 
 .about {
-  background-color: rgba(0, 0, 0, 0.6);
-  border: 2px solid #00ffcc;
-  margin: 40px auto;
-  padding: 30px;
-  width: 80%;
-  border-radius: 10px;
-  color: #e0e0e0;
-  font-size: 1em;
-  line-height: 1.6;
-  text-align: left;
-  box-shadow: 0 0 10px #00ffcc;
-}
-
-.about h2 {
-  color: #00ffcc;
-  text-shadow: 0 0 5px #00ffcc;
-  margin-bottom: 20px;
-}
-
-/* 🔒 Estilo Matrix para la sección "about" */
-.about {
   position: relative;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.8);
-  border: 2px solid #9ddd90;
+  border: 2px solid var(--matrix-border);
   margin: 40px auto;
   padding: 30px;
   width: 80%;
+  max-width: 800px;
   border-radius: 10px;
-  color: #dbdbdb;
+  color: var(--text-secondary);
   font-size: 1em;
   line-height: 1.6;
   text-align: left;
-  box-shadow: 0 0 10px #46e027;
+  box-shadow: 0 0 10px var(--matrix-shadow);
   font-family: 'Courier New', monospace;
+  animation: fadeIn 2s ease-in;
 }
-/* Título de la sección */
+
 .about h2 {
-  color: #ffffff;
-  text-shadow: 0 0 5px #2eff04;
+  color: var(--text-main);
+  text-shadow: 0 0 5px var(--matrix-green-light);
   margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .about, .content {
+    width: 98%;
+    padding: 10px;
+    font-size: 0.95em;
+  }
+  h1 {
+    font-size: 2em;
+  }
 }
 
 /* Animación de entrada tipo fade-in */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
-}
-
-.about {
-  animation: fadeIn 2s ease-in;
 }
