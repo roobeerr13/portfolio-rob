@@ -251,3 +251,25 @@ p {
   transform: scale(1.05) rotate(-2deg);
   box-shadow: 0 0 32px var(--matrix-green-light);
 }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+:root.light {
+  --matrix-bg: #f6f6f6;
+  --matrix-bg-gradient: #e0e0e0;
+  --text-main: #222;
+  --text-secondary: #333;
+  --matrix-green: #009900;
+  --matrix-green-light: #33ff33;
+  --matrix-border: #aaddaa;
+  --matrix-shadow: #b6ffb6;
+  --accent: #00bfae;
+}
