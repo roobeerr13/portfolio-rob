@@ -52,3 +52,37 @@ p {
   text-shadow: 0 0 5px #00ffcc;
   margin-bottom: 20px;
 }
+
+/* 🔒 Estilo Matrix para la sección "about" */
+.about {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid #25dd01;
+  margin: 40px auto;
+  padding: 30px;
+  width: 80%;
+  border-radius: 10px;
+  color: #25dd01;
+  font-size: 1em;
+  line-height: 1.6;
+  text-align: left;
+  box-shadow: 0 0 10px #25dd01;
+  font-family: 'Courier New', monospace;
+}
+/* Título de la sección */
+.about h2 {
+  color: #25dd01;
+  text-shadow: 0 0 5px #25dd01;
+  margin-bottom: 20px;
+}
+
+/* Animación de entrada tipo fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.about {
+  animation: fadeIn 2s ease-in;
+}
