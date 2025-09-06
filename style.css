@@ -96,6 +96,41 @@ p {
 
 /* ...existing code... */
 
+.projects {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid var(--matrix-border);
+  margin: 40px auto;
+  padding: 30px;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  color: var(--text-main);
+  font-size: 1em;
+  line-height: 1.6;
+  text-align: left;
+  box-shadow: 0 0 10px var(--matrix-shadow);
+  font-family: 'Courier New', monospace;
+  animation: fadeIn 2s ease-in;
+}
+
+.projects h2 {
+  color: var(--text-main);
+  text-shadow: 0 0 5px var(--matrix-green-light);
+  margin-bottom: 20px;
+}
+
+.projects ul {
+  padding-left: 20px;
+}
+
+.projects li {
+  margin-bottom: 12px;
+}
+
+/* ...existing code... */
+
 /* Iconos sociales estilo Matrix */
 .social-links {
   display: flex;
@@ -107,21 +142,33 @@ p {
 }
 
 .social-icon {
-  color: var(--matrix-green);
+  color: #39ff14; /* Un verde neón más brillante */
   font-size: 1.2em;
   text-decoration: none;
-  border: 2px solid var(--matrix-green);
+  border: 2px solid #39ff14;
   padding: 10px 20px;
-  border-radius: 8px;
+  border-radius: 16px; /* Más redondeado */
   transition: all 0.3s ease;
-  font-family: 'Courier New', monospace;
-  box-shadow: 0 0 10px var(--matrix-green);
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif; /* Más redondeada */
+  font-weight: bold; /* Negrita */
+  box-shadow: 0 0 16px #39ff14;
+  background: linear-gradient(90deg, #25dd01 0%, #39ff14 100%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .social-icon:hover {
-  background-color: var(--matrix-green);
+  background: linear-gradient(90deg, #39ff14 0%, #25dd01 100%);
   color: #000;
-  box-shadow: 0 0 20px var(--matrix-green);
+  box-shadow: 0 0 24px #39ff14;
+  border-color: #fff;
+}
+
+.social-icon i {
+  margin-right: 10px;
+  font-size: 1.4em;
+  filter: drop-shadow(0 0 4px #39ff14);
 }
 
 /* Iconos con Font Awesome */
