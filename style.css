@@ -19,14 +19,14 @@ body, html {
 .content {
   position: relative;
   z-index: 1;
-  color: #00ffcc;
+  color: #ffffff;
   text-align: center;
   padding-top: 100px;
 }
 
 h1 {
   font-size: 3em;
-  text-shadow: 0 0 10px #00ffcc;
+  text-shadow: 0 0 10px #25dd01;
 }
 
 p {
