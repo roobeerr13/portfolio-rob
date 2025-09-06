@@ -14,7 +14,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */ /* Elimina o comenta esta línea */
   font-family: 'Courier New', monospace;
   box-sizing: border-box;
   background: var(--matrix-bg);
