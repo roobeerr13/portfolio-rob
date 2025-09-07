@@ -273,3 +273,47 @@ p {
   --matrix-shadow: #b6ffb6;
   --accent: #00bfae;
 }
+
+.cv-download {
+  text-align: center;
+  margin-top: 24px;
+}
+
+.cv-download p {
+  color: var(--text-main);
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 1.2em;
+  margin-bottom: 12px;
+  text-shadow: 0 0 8px var(--matrix-green);
+}
+
+.cv-btn {
+  background: linear-gradient(90deg, #25dd01 0%, #39ff14 100%);
+  color: #000;
+  border: 2px solid #25dd01;
+  border-radius: 24px;
+  font-weight: bold;
+  box-shadow: 0 0 16px #39ff14;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  font-size: 1.15em;
+  margin-top: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cv-btn:hover {
+  background: #39ff14;
+  color: #111;
+  box-shadow: 0 0 32px #39ff14;
+}
+
+.cv-btn i {
+  font-size: 1.3em;
+  margin-right: 8px;
+  filter: drop-shadow(0 0 4px #39ff14);
+}
